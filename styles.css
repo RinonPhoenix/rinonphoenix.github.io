@@ -1,0 +1,136 @@
+:root {
+    --width: 14.28%;
+  }
+  
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0rem;
+    overflow:hidden;
+}
+
+.col {
+    width: var(--width);
+    height: 100vh;
+    float: left;
+
+
+
+    border: 1px solid black;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 10;
+
+    transition: 1s;
+
+}
+
+.col > .element {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+
+#main:hover > .col:not(:hover) {
+    width: 13%;
+}
+  
+.col:hover {
+    z-index: 11;
+    filter:saturate(100%);
+    width: 22%;
+}
+
+
+@keyframes move {
+    from {
+      top: 0vh;
+      left: 0;
+    }
+    to {
+      top: -100vh;
+      left: 0vw;
+    }
+  }
+
+.keep-this-div {
+    animation: move 1s;
+}
+
+
+.pyro {
+    background-color: #870900;
+    filter:saturate(20%);
+    background-image:url("images/Banner");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.hydro {
+    background-color: #004761;
+    filter:saturate(20%);
+    background-image:url("images/Banner");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.anemo {
+    background-color: #006142;
+    filter:saturate(20%);
+    background-image:url("images/Banner");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.electro {
+    background-color: #510061;
+    filter:saturate(20%);
+    background-image:url("images/Banner");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.dendro {
+    background-color: #175e01;
+    filter:saturate(20%);
+    background-image:url("images/Banner");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.cryo {
+    background-color: #006a87;
+    filter:saturate(20%);
+    background-image:url("images/Banner");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.geo {
+    background-color: #754301;
+    filter:saturate(20%);
+    background-image:url("images/Banner");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
